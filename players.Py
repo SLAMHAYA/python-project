@@ -1,37 +1,48 @@
 import itertools
 
+listadj = ["rude",
+           "affreux",
+           "fichu",
+           "satané",
+           "pauvre",
+           "avare",
+           "faible",
+           "maiprisable",
+           "ennuyeux",
+           "sombre",
+           "un"]
+listverb = ["abandonnant",
+            "suivant",
+            "luisant",
+            "etant",
+            "éblouissant",
+            "abrutissant",
+            "affligeant",
+            "aggravant",
+            "alertant",
+            "certifie",
+            "es"]
+listnom = ["escrement",
+           "chef",
+           "enfant",
+           "Super",
+           "cuisto",
+           "rat",
+           "gosse",
+           "crabe",
+           "toto",
+           "tata",
+           "Tu"]
+listlink = ["et",
+            "mais",
+            "aussi",
+            "de",
+            "qui"]
+
 
 class personnages:
 
     def __init__(self, classe):
-
-        listadj = ["rude",
-                   "affreux",
-                   "fichu",
-                   "satané",
-                   "pauvre",
-                   "avare",
-                   "faible",
-                   "maiprisable",
-                   "ennuyeux",
-                   "sombre",
-                   ]
-        listverb = ["abandonnant",
-                    "suivant",
-                    "luisant",
-                    "étant",
-                    "éblouissant",
-                    ]
-        listnom = ["escrement",
-                   "chef",
-                   "enfant",
-                   "Super",
-                   "cuisto",
-                   "rat",
-                   "gosse",
-                   "crabe",
-                   "toto",
-                   "tata", ]
 
         if classe == "toto":
             self.Pfort = list(itertools.chain(
