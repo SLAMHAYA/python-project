@@ -103,5 +103,7 @@ if(scorej1 > scorej2):
     print(nom1, "a gagné")
 elif(scorej2 > scorej1):
     print(nom2, "a gagné")
+else:
+    print("match nul")
 
 print("------------------------------AND OF THE GAME--------------------------------------")
