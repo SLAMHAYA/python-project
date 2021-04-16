@@ -1,5 +1,4 @@
 from players import personnages
-import random
 
 listadj = ["rude",
            "affreux",
