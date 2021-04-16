@@ -1,25 +1,33 @@
 from players import personnages
 import random
 
-listadj = ["Absolu",
-           "Admirable",
-           "Agréable",
-           "Aimable",
-           "Amusant"]
-listverb = ["abandonner",
-            "accepter",
-            "accompagner",
-            "acheter",
-            "adorer"
+listadj = ["rude",
+           "affreux",
+           "fichu",
+           "satané",
+           "pauvre",
+           "avare",
+           "faible",
+           "maiprisable",
+           "ennuyeux",
+           "sombre",
+           ]
+listverb = ["abandonnant",
+            "suivant",
+            "luisant",
+            "étant",
+            "éblouissant",
             ]
-listnom = ["aide",
+listnom = ["escrement",
            "chef",
            "enfant",
-           "garde",
-           "gauche",
-           "geste",
+           "Super",
+           "cuisto",
+           "rat",
            "gosse",
-           "livre"]
+           "crabe",
+           "toto",
+           "tata", ]
 EnsembledeMots = [
     "Je ne comprends pas",
     "Qu est-ce que c est ?",
@@ -57,7 +65,6 @@ else:
 print("veuillez choisir des mots parmis les listes suivantes")
 print(listadj, listnom, listverb, EnsembledeMots)
 
-
 print(" veuillez composer votre phrase", nom1)
 p1 = input()
 scorej1 = 0
@@ -66,7 +73,7 @@ for word in p1.split():
         scorej1 += 3
     else:
         scorej1 += 1
-print(scorej1)
+print("votre score est", scorej1)
 
 print(" veuillez composer votre phrase", nom2)
 p2 = input()
