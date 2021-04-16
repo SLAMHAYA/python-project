@@ -68,7 +68,7 @@ else:
     player2 = personnages(j2)
 
 print("veuillez choisir des mots parmis les listes suivantes")
-print(listadj, listnom, listverb)
+print(listadj, listnom, listverb, listlink)
 
 scorej1 = 0
 scorej2 = 0
