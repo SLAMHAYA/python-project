@@ -5,25 +5,33 @@ class personnages:
 
     def __init__(self, classe):
 
-        listadj = ["Absolu",
-                   "Admirable",
-                   "Agréable",
-                   "Aimable",
-                   "Amusant"]
-        listverb = ["abandonner",
-                    "accepter",
-                    "accompagner",
-                    "acheter",
-                    "adorer"
+        listadj = ["rude",
+                   "affreux",
+                   "fichu",
+                   "satané",
+                   "pauvre",
+                   "avare",
+                   "faible",
+                   "maiprisable",
+                   "ennuyeux",
+                   "sombre",
+                   ]
+        listverb = ["abandonnant",
+                    "suivant",
+                    "luisant",
+                    "étant",
+                    "éblouissant",
                     ]
-        listnom = ["aide",
+        listnom = ["escrement",
                    "chef",
                    "enfant",
-                   "garde",
-                   "gauche",
-                   "geste",
+                   "Super",
+                   "cuisto",
+                   "rat",
                    "gosse",
-                   "livre"]
+                   "crabe",
+                   "toto",
+                   "tata", ]
 
         if classe == "toto":
             self.Pfort = list(itertools.chain(
