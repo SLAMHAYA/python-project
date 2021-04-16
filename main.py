@@ -11,13 +11,18 @@ listadj = ["rude",
            "maiprisable",
            "ennuyeux",
            "sombre",
-           ]
+           "un"]
 listverb = ["abandonnant",
             "suivant",
             "luisant",
-            "étant",
+            "etant",
             "éblouissant",
-            ]
+            "abrutissant",
+            "affligeant",
+            "aggravant",
+            "alertant",
+            "certifie",
+            "es"]
 listnom = ["escrement",
            "chef",
            "enfant",
@@ -27,14 +32,14 @@ listnom = ["escrement",
            "gosse",
            "crabe",
            "toto",
-           "tata", ]
-EnsembledeMots = [
-    "Je ne comprends pas",
-    "Qu est-ce que c est ?",
-    "Je voudrais poser une question",
-    "Je n ai pas bien compris",
-    "les cheveux raides",
-]
+           "tata",
+           "Tu"]
+listlink = ["et",
+            "mais",
+            "aussi",
+            "de",
+            "qui"]
+
 print("------------------------------OH...SIR GAME--------------------------------------")
 player1 = None
 player2 = None
@@ -63,27 +68,36 @@ else:
     player2 = personnages(j2)
 
 print("veuillez choisir des mots parmis les listes suivantes")
-print(listadj, listnom, listverb, EnsembledeMots)
+print(listadj, listnom, listverb)
 
-print(" veuillez composer votre phrase", nom1)
-p1 = input()
 scorej1 = 0
-for word in p1.split():
-    if(word in personnages(j1).Pfort):
-        scorej1 += 3
-    else:
-        scorej1 += 1
-print("votre score est", scorej1)
-
-print(" veuillez composer votre phrase", nom2)
-p2 = input()
 scorej2 = 0
-for word in p2.split():
-    if(word in personnages(j2).Pfort):
-        scorej2 += 3
-    else:
-        scorej2 += 1
-print(scorej2)
+p1 = None
+p2 = None
+while p1 != "f" or p2 != "f":
+
+    print(" veuillez composer votre phrase ou tapez f si vous voulez terminer votre phrase", nom1)
+    p1 = input()
+
+    for word in p1.split():
+        if(word in p1 == "f"):
+            break
+        elif(word in personnages(j1).Pfort):
+            scorej1 += 3
+        else:
+            scorej1 += 1
+    print("votre score est", scorej1)
+
+    print("veuillez composer votre phrase ou tapez f si vous voulez terminer votre phrase", nom2)
+    p2 = input()
+    for word in p2.split():
+        if(word in p2 == "f"):
+            break
+        elif(word in personnages(j2).Pfort):
+            scorej2 += 3
+        else:
+            scorej2 += 1
+    print("votre score est", scorej2)
 
 if(scorej1 > scorej2):
     print(nom1, "a gagné")
